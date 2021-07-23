@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 2</title>
+	<style>
+		table,tr,td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<p><input type="text" name="" id="row-input">행<input type="text" name="" id="column-input">열</p>
+	<table></table>
+	<input type="submit" value="작성" onclick="createTable(); return false;">
+	<script>
+		function createTable() {
+			let getTable = document.getElementsByTagName("table");
+			console.log(getTable);
+			let rows = 0;
+			let columns = 0;
+			rows = document.getElementById("row-input").value;
+			columns = document.getElementById("column-input").value;
+			for (let row = 0; row < rows; row++) {
+				let temp_tr = document.createElement("tr");
+
+				for (let column = 0; column < columns; column++) {
+					temp_td = document.createElement("td");
+					temp_td.innerHTML = `${row}, ${column}`;
+					temp_tr.appendChild(temp_td);
+				}
+				getTable[0].appendChild(temp_tr);
+			}
+
+		}
+
+
+	</script>
+</body>
+
+</html>
