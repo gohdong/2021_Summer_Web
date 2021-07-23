@@ -196,15 +196,70 @@ nav ul li {
 }
 
 .job-offer {
-  background-color: white;
+  /* background-color: white; */
   border-radius: 15px;
   width: 300px;
   height: 340px;
+  display: grid;
+  grid-row: repeat(4,1fr);
+  grid-gap: 15px 0;
+}
+
+.offer {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  height: 76.25px;
+}
+.ad {
+  background-color: white;
+  border-radius: 10px;
+  height: 76.25px;
+  background-image: url("https://storage.surfit.io/display/item/1486570867/14321731336007aa123e015.png");
+  background-size: cover;
+}
+.company-logo{
+  width: 46px;
+  height: 46px;
+  /* display: block; */
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  border-radius: 6px;
+  object-fit: cover;
+  transform: translate(0,-50%);
+
+  /* height: 100%; */
+  /* object-fit: contain; */
+}
+
+.job-description{
+  padding-left: 76px;
+  padding-top: 15px;
+}
+.job-description p{
+  margin: 0;
+  padding: 0;
+
+  /* display: inline; */
+}
+.job-position {
+  font-size: 15px;
+  color: #18191f;
+}
+.company-name {
+  font-size: 12.5px;
+  color: #cecfd5;
+}
+.company-info{
+  font-size: 13px;
+  color: #78797d;
 }
 
 .new-contents-grid {
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-columns: repeat(4,300px);
   grid-template-rows: repeat(5, 340px);
   grid-gap: 30px 30px;
 }
