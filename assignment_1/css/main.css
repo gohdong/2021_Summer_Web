@@ -1,5 +1,6 @@
 * {
-  font-family: -apple-system,"Apple SD Gothic Neo", BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, sans-serif
+  font-family: -apple-system, "Apple SD Gothic Neo", BlinkMacSystemFont,
+    "Malgun Gothic", "맑은 고딕", helvetica, sans-serif;
 }
 
 body {
@@ -8,14 +9,12 @@ body {
   background-color: #e5e6ec;
 }
 ::-webkit-scrollbar {
-  background-color: #CECFD5;
+  background-color: #cecfd5;
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #9E9FA5;
+  background-color: #9e9fa5;
 }
-
-
 
 header {
   background-color: #18191f;
@@ -42,7 +41,7 @@ header {
 }
 nav ul {
   list-style: none;
-  color: hsla(0,0%,94%,.65);
+  color: hsla(0, 0%, 94%, 0.65);
   padding-left: 16px;
 }
 
@@ -54,7 +53,6 @@ nav ul li {
 nav ul li:first-child {
   color: white;
 }
-
 
 .main {
   display: flex;
@@ -189,7 +187,7 @@ nav ul li:first-child {
   overflow-y: hidden;
 }
 
-.sidebar-category-items:hover{
+.sidebar-category-items:hover {
   overflow-y: scroll;
 }
 .sidebar-category-items::-webkit-scrollbar {
@@ -207,6 +205,22 @@ nav ul li:first-child {
 .sidebar-category-items li:hover {
   color: #18191e;
 }
+
+.small-device-category {
+  display: none;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.small-device-category p{
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 15px;
+}
+
 .contents-box {
   height: 100%;
   padding-top: 70px;
@@ -219,7 +233,10 @@ nav ul li:first-child {
 }
 
 .recommend-contents-grid {
+  box-sizing: border-box;
+  height: 340px;
   display: grid;
+  overflow: hidden;
 
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 340px;
@@ -230,9 +247,6 @@ nav ul li:first-child {
   float: left;
   margin-left: 30px;
 }
-
-
-
 
 .new-contents {
   clear: both;
@@ -305,6 +319,13 @@ nav ul li:first-child {
 .company-info {
   font-size: 13px;
   color: #78797d;
+}
+
+.small-device-category,
+.content,
+.offer,
+.ad {
+  box-shadow: 0 6px 25px rgb(24 25 31 / 5%);
 }
 
 .new-contents-grid {
@@ -406,4 +427,71 @@ nav ul li:first-child {
 .ad:hover {
   transform: translate(0, -3px);
   box-shadow: rgba(113, 114, 120, 0.1) 0px 5px 10px 5px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .recommend-contents-grid {
+    box-sizing: border-box;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: 340px 1;
+    height: 340px;
+    overflow: hidden;
+  }
+
+  .new-contents-grid {
+    grid-template-columns: repeat(3, 300px);
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .recommend-contents-grid {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: 340px 2;
+    height: 100%;
+    grid-row-gap: 30px;
+    /* height: 340px; */
+    /* overflow: hidden; */
+  }
+
+  .new-contents-grid {
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  .recommend-contents-grid .job-offer {
+    padding-top: 0;
+  }
+
+  .new-job {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+
+  .small-device-category{
+    display: block;
+  }
+
+  .contents-box {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .recommend-contents-grid,.new-contents-grid{
+    display: block;
+
+  }
+
+  .recommend-contents-grid .job-offer{
+    display: none;
+  }
+
+  .content{
+    margin-bottom: 20px;
+
+  }
 }

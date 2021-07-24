@@ -44,6 +44,10 @@ window.onload = function () {
 		jobOffer.innerHTML += offer;
 	}
 	jobOffer.innerHTML += ad;
+	let temp = jobOffer.cloneNode();
+	temp.innerHTML = jobOffer.innerHTML;
+	recommendContents.appendChild(temp);
+
 
 	for (let i = 0; i < 19; i++) {
 		newContents.innerHTML += content;

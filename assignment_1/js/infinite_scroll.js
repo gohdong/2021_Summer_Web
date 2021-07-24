@@ -1,10 +1,10 @@
+
 window.onscroll = function (e) {
 	//body 끝에 닫기 전에 실행,
 	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 680) {
 		addContents();
 	}
 };
-f
 
 function addContents() {
 	let newContents = document.getElementsByClassName("new-contents-grid")[0];
