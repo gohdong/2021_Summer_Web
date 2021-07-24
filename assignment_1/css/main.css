@@ -230,6 +230,10 @@ nav ul li:first-child {
   float: left;
   margin-left: 30px;
 }
+
+
+
+
 .new-contents {
   clear: both;
   padding-top: 30px;
@@ -247,6 +251,8 @@ nav ul li:first-child {
   display: grid;
   grid-row: repeat(4, 1fr);
   grid-gap: 15px 0;
+  /* 이모지 때문에 5px밀림 */
+  padding-top: 5px;
 }
 
 .offer {
