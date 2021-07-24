@@ -3,6 +3,15 @@ body {
   margin: 0;
   background-color: #e5e6ec;
 }
+::-webkit-scrollbar {
+  background-color: #CECFD5;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #9E9FA5;
+}
+
+
 
 header {
   background-color: #18191f;
@@ -29,14 +38,19 @@ header {
 }
 nav ul {
   list-style: none;
-  color: white;
+  color: hsla(0,0%,94%,.65);
   padding-left: 16px;
 }
+
 nav ul li {
   display: inline-block;
   margin: 0 10px;
   padding: 0;
 }
+nav ul li:first-child {
+  color: white;
+}
+
 
 .main {
   display: flex;
@@ -157,12 +171,38 @@ nav ul li {
 .sidebar-category {
   color: #78797d;
 }
-.sidebar-category ~ ul {
+.select-category {
+  background-color: white;
+  color: #18191e;
+  padding: 5px;
+  border-radius: 5px;
+}
+.sidebar-category-items {
   color: #78797d;
   font-size: 16px;
   line-height: 2;
+  height: 400px;
+  overflow-y: hidden;
 }
 
+.sidebar-category-items:hover{
+  overflow-y: scroll;
+}
+.sidebar-category-items::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+  width: 5px;
+}
+.sidebar-category-items::-webkit-scrollbar-thumb {
+  background-color: #cecfd5;
+}
+
+.sidebar-category-items li {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.sidebar-category-items li:hover {
+  color: #18191e;
+}
 .contents-box {
   height: 100%;
   padding-top: 70px;
@@ -201,7 +241,7 @@ nav ul li {
   width: 300px;
   height: 340px;
   display: grid;
-  grid-row: repeat(4,1fr);
+  grid-row: repeat(4, 1fr);
   grid-gap: 15px 0;
 }
 
@@ -218,7 +258,7 @@ nav ul li {
   background-image: url("https://storage.surfit.io/display/item/1486570867/14321731336007aa123e015.png");
   background-size: cover;
 }
-.company-logo{
+.company-logo {
   width: 46px;
   height: 46px;
   /* display: block; */
@@ -228,17 +268,17 @@ nav ul li {
   left: 15px;
   border-radius: 6px;
   object-fit: cover;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
 
   /* height: 100%; */
   /* object-fit: contain; */
 }
 
-.job-description{
+.job-description {
   padding-left: 76px;
   padding-top: 15px;
 }
-.job-description p{
+.job-description p {
   margin: 0;
   padding: 0;
 
@@ -252,14 +292,14 @@ nav ul li {
   font-size: 12.5px;
   color: #cecfd5;
 }
-.company-info{
+.company-info {
   font-size: 13px;
   color: #78797d;
 }
 
 .new-contents-grid {
   display: grid;
-  grid-template-columns: repeat(4,300px);
+  grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(5, 340px);
   grid-gap: 30px 30px;
 }
@@ -349,4 +389,11 @@ nav ul li {
   color: #717278;
   font-size: 13.5px;
   line-height: 51px;
+}
+
+.content:hover,
+.offer:hover,
+.ad:hover {
+  transform: translate(0, -3px);
+  box-shadow: rgba(113, 114, 120, 0.1) 0px 5px 10px 5px;
 }
