@@ -135,14 +135,14 @@ nav ul li:first-child {
   height: 28px;
 }
 
-.license{
+.license {
   position: absolute;
   left: 30px;
   bottom: 30px;
 }
 
-
-.banner-img-name,.banner-img-author{
+.banner-img-name,
+.banner-img-author {
   margin: 0;
   padding: 0;
   color: #b6b7bd;
@@ -150,11 +150,9 @@ nav ul li:first-child {
   font-weight: 300;
 }
 
-.banner-img-name{
-  
+.banner-img-name {
   color: white;
   font-size: 16px;
-
 }
 /* 
 .banner img{
@@ -226,7 +224,7 @@ nav ul li:first-child {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.small-device-category p{
+.small-device-category p {
   line-height: 60px;
   font-size: 20px;
   font-weight: 700;
@@ -245,14 +243,18 @@ nav ul li:first-child {
 }
 
 .recommend-contents-grid {
-  box-sizing: border-box;
-  height: 340px;
+  /* box-sizing: border-box; */
+  /* height: 340px; */
   display: grid;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 340px;
   grid-gap: 0 30px;
+}
+
+.recommend-contents-grid .job-offer {
+  display: none;
 }
 
 .new-job {
@@ -443,11 +445,15 @@ nav ul li:first-child {
 
 @media only screen and (max-width: 1600px) {
   .recommend-contents-grid {
-    box-sizing: border-box;
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: 340px 1;
+    /* box-sizing: border-box;
     height: 340px;
-    overflow: hidden;
+    overflow: hidden; */
+  }
+
+  .recommend-contents-grid > :nth-last-child(2) {
+    display: none;
   }
 
   .new-contents-grid {
@@ -468,6 +474,10 @@ nav ul li:first-child {
   .new-contents-grid {
     grid-template-columns: repeat(2, 300px);
   }
+  .recommend-contents-grid > :nth-last-child(2),
+  .recommend-contents-grid > :last-child {
+    display: grid;
+  }
 
   .recommend-contents-grid .job-offer {
     padding-top: 0;
@@ -486,10 +496,10 @@ nav ul li:first-child {
     bottom: 10px;
     display: block;
     text-align: center;
-    
   }
-  
-  .banner-img-name,.banner-img-author{
+
+  .banner-img-name,
+  .banner-img-author {
     /* width: 100%; */
     display: inline-block;
     margin: 0;
@@ -499,12 +509,11 @@ nav ul li:first-child {
     font-weight: 400;
   }
 
-  
   .sidebar {
     display: none;
   }
 
-  .small-device-category{
+  .small-device-category {
     display: block;
   }
 
@@ -514,18 +523,16 @@ nav ul li:first-child {
 }
 
 @media only screen and (max-width: 770px) {
-
-  .recommend-contents-grid,.new-contents-grid{
+  .recommend-contents-grid,
+  .new-contents-grid {
     display: block;
-
   }
 
-  .recommend-contents-grid .job-offer{
+  .recommend-contents-grid .job-offer {
     display: none;
   }
 
-  .content{
+  .content {
     margin-bottom: 20px;
-
   }
 }
