@@ -446,99 +446,7 @@ nav ul li {
   box-shadow: rgba(113, 114, 120, 0.1) 0px 5px 10px 5px;
 }
 
-@media only screen and (max-width: 1600px) {
-  .recommend-contents-grid {
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: 340px 1;
-    /* box-sizing: border-box;
-    height: 340px;
-    overflow: hidden; */
-  }
 
-  .recommend-contents-grid > :nth-last-child(2) {
-    display: none;
-  }
-
-  .new-contents-grid {
-    grid-template-columns: repeat(3, 300px);
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .recommend-contents-grid {
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: 340px 2;
-    height: 100%;
-    grid-row-gap: 30px;
-    /* height: 340px; */
-    /* overflow: hidden; */
-  }
-
-  .new-contents-grid {
-    grid-template-columns: repeat(2, 300px);
-  }
-  .recommend-contents-grid > :nth-last-child(2),
-  .recommend-contents-grid > :last-child {
-    display: grid;
-  }
-
-  .recommend-contents-grid .job-offer {
-    padding-top: 0;
-  }
-
-  .new-job {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .license {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 10px;
-    display: block;
-    text-align: center;
-  }
-
-  .banner-img-name,
-  .banner-img-author {
-    /* width: 100%; */
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    color: #b6b7bd;
-    font-size: 11px;
-    font-weight: 400;
-  }
-
-  .sidebar {
-    display: none;
-  }
-
-  .small-device-category {
-    display: block;
-  }
-
-  .contents-box {
-    padding-left: 0;
-  }
-}
-
-@media only screen and (max-width: 770px) {
-  .recommend-contents-grid,
-  .new-contents-grid {
-    display: block;
-  }
-
-  .recommend-contents-grid .job-offer {
-    display: none;
-  }
-
-  .content {
-    margin-bottom: 20px;
-  }
-}
 
 /* 여기부터 디렉토리 */
 .spacer {
@@ -702,4 +610,107 @@ nav ul li {
   height: 100%;
   background-size: 30px;
   filter: invert(.5);
+}
+
+/* 여기부터 반응형 */
+
+@media only screen and (max-width: 1600px) {
+  .recommend-contents-grid {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: 340px 1;
+    /* box-sizing: border-box;
+    height: 340px;
+    overflow: hidden; */
+  }
+
+  .recommend-contents-grid > :nth-last-child(2) {
+    display: none;
+  }
+
+  .new-contents-grid {
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  .directory-grid{
+    grid-template-columns: repeat(3, 330px);
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .recommend-contents-grid {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: 340px 2;
+    height: 100%;
+    grid-row-gap: 30px;
+    /* height: 340px; */
+    /* overflow: hidden; */
+  }
+
+  .new-contents-grid {
+    grid-template-columns: repeat(2, 300px);
+  }
+  .recommend-contents-grid > :nth-last-child(2),
+  .recommend-contents-grid > :last-child {
+    display: grid;
+  }
+
+  .recommend-contents-grid .job-offer {
+    padding-top: 0;
+  }
+
+  .new-job {
+    display: none;
+  }
+  .directory-grid{
+    grid-template-columns: repeat(2, 330px);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .license {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  .banner-img-name,
+  .banner-img-author {
+    /* width: 100%; */
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: #b6b7bd;
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .small-device-category {
+    display: block;
+  }
+
+  .contents-box {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .recommend-contents-grid,
+  .new-contents-grid {
+    display: block;
+  }
+
+  .recommend-contents-grid .job-offer {
+    display: none;
+  }
+
+  .content {
+    margin-bottom: 20px;
+  }
 }
