@@ -540,34 +540,80 @@ nav ul li {
   }
 }
 
-
 /* 여기부터 디렉토리 */
-.spacer{
+.spacer {
   height: 30px;
   width: 100%;
 }
-.directory-title-area{
+.directory-title-area {
   display: flex;
   justify-content: space-between;
 }
 
-.directory-name{
+.directory-title {
   padding: 0;
   margin: 15px 0;
   font-size: 40px;
 }
 
-.directory-grid{
+.directory-grid {
   display: grid;
-  grid-template-columns: repeat(4,330px);
-  grid-template-rows: repeat(5,600px);
+  grid-template-columns: repeat(4, 330px);
+  grid-template-rows: repeat(5, 600px);
   grid-gap: 30px 30px;
 }
 
-
-.directory{
+.directory {
   /* width: 300px;
   height: 570px; */
-  background-color: black;
+  /* background-color: black; */
   border-radius: 10px;
+}
+
+.directory-profile-img {
+  width: 330px;
+  height: 330px;
+  border-radius: 10px;
+}
+.directory-name-area {
+  display: flex;
+  justify-content: space-between;
+  height: 28px;
+
+  margin: 0;
+  margin-top: 15px;
+}
+
+.directory-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111218;
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+}
+.heart {
+  margin-top: 4px;
+  fill: #717278;
+}
+
+.directory-position {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #111218;
+}
+
+.directory-description {
+  font-weight: 400;
+  line-height: 1.6;
+  padding-bottom: 20px;
+  font-size: 14px;
+  margin-top: 0;
+  color: #78797d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
