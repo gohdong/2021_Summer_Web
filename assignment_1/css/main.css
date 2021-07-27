@@ -617,3 +617,36 @@ nav ul li {
   -webkit-line-clamp: 3; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
+
+.directory ul{
+  list-style: none;
+  padding-left: 0;
+}
+.directory ul li{
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: white;
+  display: inline-block;
+  margin-right: 5px;
+}
+/* .directory-contact{
+
+} */
+.directory a {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+
+}
+.portfoilo{
+  height: 100%;
+  background-size: 30px;
+}
+
+.instagram,.github,.behance{
+  height: 100%;
+  background-size: 30px;
+  filter: invert(.5);
+}
