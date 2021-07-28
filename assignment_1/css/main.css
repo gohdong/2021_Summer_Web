@@ -446,8 +446,6 @@ nav ul li {
   box-shadow: rgba(113, 114, 120, 0.1) 0px 5px 10px 5px;
 }
 
-
-
 /* 여기부터 디렉토리 */
 .spacer {
   height: 30px;
@@ -478,7 +476,7 @@ nav ul li {
   border-radius: 10px;
 }
 
-.image-box{
+.image-box {
   width: 330px;
   height: 330px;
   border-radius: 10px;
@@ -499,8 +497,6 @@ nav ul li {
   border-radius: 10px;
 }
 
-
-
 .directory-name-area {
   display: flex;
   justify-content: space-between;
@@ -508,7 +504,6 @@ nav ul li {
 
   margin: 0;
   margin-top: 15px;
-  
 }
 
 .directory-name {
@@ -522,9 +517,8 @@ nav ul li {
   position: relative;
 }
 
-
 .directory-name::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -538,20 +532,15 @@ nav ul li {
   transition: transform 0.25s;
 }
 
-.image-box:hover + .directory-name-area .directory-name::after{
+.image-box:hover + .directory-name-area .directory-name::after {
   transform: scaleX(1);
   /* transform-origin: bottom left; */
 }
-
-
 
 /* .directory-name:hover:after {
 
   transform: scaleX(1);
 } */
-
-
-
 
 .heart {
   margin-top: 4px;
@@ -579,11 +568,11 @@ nav ul li {
   -webkit-box-orient: vertical;
 }
 
-.directory ul{
+.directory ul {
   list-style: none;
   padding-left: 0;
 }
-.directory ul li{
+.directory ul li {
   height: 30px;
   width: 30px;
   border-radius: 10px;
@@ -599,20 +588,32 @@ nav ul li {
   width: 30px;
   height: 30px;
   text-decoration: none;
-
 }
-.portfoilo{
+.portfoilo {
   height: 100%;
   background-size: 30px;
 }
 
-.instagram,.github,.behance{
+.instagram,
+.github,
+.behance {
   height: 100%;
   background-size: 30px;
-  filter: invert(.5);
+  filter: invert(0.5);
 }
 
 /* 여기부터 반응형 */
+
+@media only screen and (max-width: 1800px) {
+  .directory-grid {
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  .image-box {
+    height: 300px;
+    width: 300px;
+  }
+}
 
 @media only screen and (max-width: 1600px) {
   .recommend-contents-grid {
@@ -629,10 +630,6 @@ nav ul li {
 
   .new-contents-grid {
     grid-template-columns: repeat(3, 300px);
-  }
-
-  .directory-grid{
-    grid-template-columns: repeat(3, 330px);
   }
 }
 
@@ -661,8 +658,8 @@ nav ul li {
   .new-job {
     display: none;
   }
-  .directory-grid{
-    grid-template-columns: repeat(2, 330px);
+  .directory-grid {
+    grid-template-columns: repeat(2, 300px);
   }
 }
 
@@ -713,4 +710,35 @@ nav ul li {
   .content {
     margin-bottom: 20px;
   }
+
+  .directory-grid {
+    display: block;
+  }
+
+  .directory{
+    border-bottom: 0.3px solid #cecfd5;
+    border-radius: 0;
+  }
+
+  .image-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .directory-description {
+    margin-bottom: 0;
+    display: block;
+  }
+
+  .directory ul {
+    margin-top: 0;
+    margin-left: 85px;
+  }
+
+  /* .directory{
+    display: flex;
+  } */
 }
