@@ -470,10 +470,7 @@ nav ul li {
 }
 
 .directory {
-  /* width: 300px;
-  height: 570px; */
-  /* background-color: black; */
-  border-radius: 10px;
+  overflow: hidden;
 }
 
 .image-box {
@@ -481,20 +478,20 @@ nav ul li {
   height: 330px;
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .directory-profile-img {
   box-sizing: inherit;
   width: 100%;
   height: 100%;
-  /* border-radius: 10px; */
   transition: all 0.5s;
   transform: scale(1);
 }
 
 .directory-profile-img:hover {
   transform: scale(1.05);
-  border-radius: 10px;
 }
 
 .directory-name-area {
@@ -715,7 +712,7 @@ nav ul li {
     display: block;
   }
 
-  .directory{
+  .directory {
     border-bottom: 0.3px solid #cecfd5;
     border-radius: 0;
   }
