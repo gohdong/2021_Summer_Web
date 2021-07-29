@@ -724,16 +724,18 @@ nav ul li {
     border-radius: 20px;
     float: left;
     margin-right: 20px;
+    margin-top: 15px;
   }
 
   .directory-description {
     margin-bottom: 0;
     display: block;
+    margin-left: 90px;
   }
 
   .directory ul {
     margin-top: 0;
-    margin-left: 85px;
+    margin-left: 90px;
   }
 
   /* .directory{
