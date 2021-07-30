@@ -877,6 +877,44 @@ footer {
     padding: 30px 0 40px;
 }
 
+.footer-info{
+    display: flex;
+    list-style: none;
+    font-size: 13px;
+    color: #78797f;
+    padding-left: 0px;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+.footer-info a{
+    color: #78797f;
+    text-decoration: none;
+}
+
+.footer-info a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-info li:after{
+    content: "|";
+    margin: 0 5px;
+}
+.footer-info li:last-child:after{
+    content: "";
+}
+
+.footer-copyright p{
+    color: #78797f;
+    font-size: 14px;
+    position: relative;
+    margin: 0;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
 
 /* 여기부터 반응형 */
 
