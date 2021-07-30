@@ -1,6 +1,5 @@
 window.onload = function () {
 	let directoryGrid = document.getElementsByClassName("directory-grid")[0];
-	
 	let directory = `
 				<div class="directory">
 					<div class="image-box">

@@ -600,6 +600,32 @@ nav ul li {
   filter: invert(0.5);
 }
 
+.floating-action-button{
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /*box-sizing: inherit;*/
+  height: 60px;
+  padding: 0 30px;
+  background-color: #3562ff;
+  border-radius: 30px;
+  z-index: 1000;
+}
+
+.floating-action-button p{
+  color: white;
+  margin: 0;
+  line-height: 60px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.floating-action-button .plus-icon{
+  font-size: 30px;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
 /* 여기부터 반응형 */
 
 @media only screen and (max-width: 1800px) {
@@ -736,6 +762,23 @@ nav ul li {
   .directory ul {
     margin-top: 0;
     margin-left: 90px;
+  }
+
+  .floating-action-button{
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+  }
+  .floating-action-button>p:last-child{
+    display: none;
+  }
+  .floating-action-button .plus-icon{
+    margin: 0;
+    /*display: none;*/
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
   }
 
   /* .directory{
