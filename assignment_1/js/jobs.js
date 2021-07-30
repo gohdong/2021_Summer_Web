@@ -42,7 +42,6 @@ class Content extends React.Component {
             </div>
         );
     }
-
 }
 
 class MainContents extends React.Component {
