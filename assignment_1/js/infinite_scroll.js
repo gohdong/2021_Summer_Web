@@ -10,7 +10,7 @@ function addContents() {
 	let newContents = document.getElementsByClassName("new-contents-grid")[0];
 	let content = `
 	<div class="content">
-		<img src="https://www.terminix.co.kr/wp-content/uploads/2020/03/placeholder.png" alt=""
+		<img src="../images/images.png" alt=""
 			class="thumbnail">
 		<div class="content-preview">
 			<h4>This is Title</h4>
@@ -24,7 +24,7 @@ function addContents() {
 			</ul>
 		</div>
 		<div class="author">
-			<img src="https://www.terminix.co.kr/wp-content/uploads/2020/03/placeholder.png" alt="">
+			<img src="../images/images.png" alt="">
 			<p class="author-name">authorName</p>
 		</div>
 	</div>

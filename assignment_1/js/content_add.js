@@ -4,7 +4,7 @@ window.onload = function () {
 	let jobOffer = document.getElementsByClassName("job-offer")[0];
 	let content = `
 	<div class="content">
-		<img src="https://www.terminix.co.kr/wp-content/uploads/2020/03/placeholder.png" alt=""
+		<img src="../images/images.png" alt=""
 			class="thumbnail">
 		<div class="content-preview">
 			<h4>This is Title</h4>
@@ -18,7 +18,7 @@ window.onload = function () {
 			</ul>
 		</div>
 		<div class="author">
-			<img src="https://www.terminix.co.kr/wp-content/uploads/2020/03/placeholder.png" alt="">
+			<img src="../images/images.png" alt="">
 			<p class="author-name">authorName</p>
 		</div>
 	</div>
@@ -26,7 +26,7 @@ window.onload = function () {
 
 	let offer = `
 	<div class="offer">
-		<img src="https://www.terminix.co.kr/wp-content/uploads/2020/03/placeholder.png" alt=""
+		<img src="../images/images.png" alt=""
 			class="company-logo">
 		<div class="job-description">
 			<p class="job-position">JOB POSITION</p>

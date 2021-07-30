@@ -6,14 +6,14 @@ class Content extends React.Component {
             <div className="job">
                 <div className="job-img-box">
                     <img className="job-img"
-                         src="https://www.terminix.co.kr/wp-content/uploads/2020/03/placeholder.png" alt="."/>
+                         src="../images/images.png" alt="."/>
                 </div>
 
                 <div className="job-main">
 
 
                     <div className="job-title">
-                        <img src="https://www.terminix.co.kr/wp-content/uploads/2020/03/placeholder.png" alt="."
+                        <img src="../images/images.png" alt="."
                              className="company-img"/>
                         <div>
                             <p className="position-name">Position</p>
