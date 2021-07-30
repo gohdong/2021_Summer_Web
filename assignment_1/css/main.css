@@ -1081,7 +1081,7 @@ footer {
         margin: 0 -20px;
     }
 
-    .job-img-box .job-img {
+    .job-img-box,.job-img {
         border-radius: 0;
     }
 
