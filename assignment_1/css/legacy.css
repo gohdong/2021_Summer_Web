@@ -6712,7 +6712,7 @@ img:not([src]) {
   }
 }
 .job-bn-area .job-bn-inner {
-  background: url(/images/aa12159755964dd78a03aec128440dcd.jpg) no-repeat;
+  background: url(/images/jobs-banner-image.jpg) no-repeat;
   background-position: 50%;
   background-size: cover;
   display: table;
@@ -21969,7 +21969,7 @@ body.body-scrollbar::-webkit-scrollbar-thumb {
   }
 }
 .theme-light .job-bn-area .job-bn-inner {
-  background: url(/images/aa12159755964dd78a03aec128440dcd.jpg) no-repeat;
+  background: url(/images/jobs-banner-image.jpg) no-repeat;
   background-position: 50%;
   background-size: cover;
   display: table;
