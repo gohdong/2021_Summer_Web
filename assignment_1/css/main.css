@@ -1032,6 +1032,25 @@ footer {
         padding-left: 0;
     }
 
+    .footer-inner{
+        display: block;
+    }
+
+    .footer-menu{
+        margin: 20px 0;
+    }
+
+    .footer-menu-container{
+        flex-wrap: wrap;
+    }
+
+    .footer-info{
+        flex-wrap: wrap;
+    }
+
+    .footer-copyright{
+        margin-top: 25px;
+    }
 
 }
 
