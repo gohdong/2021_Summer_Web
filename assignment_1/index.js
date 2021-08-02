@@ -7,11 +7,11 @@ app.get('', (req, res) => {
 });
 
 app.get('/directory', (req, res) => {
-    res.sendFile(__dirname + '/directory.html');
+    res.sendFile(__dirname + '/pages/directory.html');
 });
 
 app.get('/jobs', (req, res) => {
-    res.sendFile(__dirname + '/jobs.html');
+    res.sendFile(__dirname + '/pages/jobs.html');
 });
 
 
